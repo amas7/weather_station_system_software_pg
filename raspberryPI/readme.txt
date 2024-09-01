@@ -25,3 +25,5 @@
 7. Automatic Service Restart
 
     Note: If the Raspberry Pi shuts down and restarts, the functionalities (MQTT broker, database integration, and visualization) are services that will restart automatically.
+
+To access the visualization of weather data on devices connected to the same local network, go to http://<Raspberry_Pi_IP>:5000.
