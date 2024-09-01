@@ -4,15 +4,15 @@
 
 2. Find the IP Address
 
-    Action: Find the IP address of the Raspberry Pi by running the following command: "hostname -I".
+    Action: Find the IP address of the Raspberry Pi by running the following command: "hostname -I", note that ip adress for esp32 configuration
 
 3. Download and Place the Weather Station Files
 
-    Action: Download the respisodery "files" and place it in a directory with appropriate permissions.
+    Action: Download the directory "files" and place it in a directory on your Raspberry Pi with appropriate permissions.
 
 4. Edit the Configuration Files
 
-    Action: Edit and save the configuration files config_mqtt.conf and config_db.conf with your desired username and password.
+   Action: Edit and save the configuration files config_mqtt.conf and config_db.conf with your desired username and password. Note the publisher password, publisher username, and topic for the ESP32 configuration.
 
 5. Make the Script Executable
 
