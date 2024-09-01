@@ -6,16 +6,33 @@
         Open the weather_station.ino file in the Arduino IDE.
         Connect your ESP32 board and upload the code.
 
-    First Time Setup:
-        After uploading the code, the ESP32 will start in configuration mode.
-        Connect to the Wi-Fi network Weather_station_config with the password 3615codePereNoel.
-       Follow the instructions to connect the device to your local Wi-Fi network and configure the MQTT settings. Additionally, set the radius of the anemometer and calculate the rainfall coefficient by multiplying the volume (in mL) of one bucket from the tipping bucket gauge by 10, then dividing by the drop collection area (in cm²).
+   First-Time Setup:
+
+    Start the ESP32 in Configuration Mode:
+        After uploading the code, the ESP32 will automatically start in configuration mode.
+
+    Connect to the Configuration Network:
+        Connect your device to the Wi-Fi network named Weather_station_config using the password 3615codePereNoel.
+
+    Configure Wi-Fi and MQTT Settings:
+        Follow the on-screen instructions to connect the ESP32 to your local Wi-Fi network.
+        For the MQTT settings:
+            MQTT Address: Enter the IP address of your Raspberry Pi.
+            MQTT Username: Use the publisher username.
+            MQTT Password: Use the publisher password.
+            Station Name: Enter the topic name.
+
+    Set Anemometer Radius and Rainfall Coefficient:
+        Radius of the Anemometer: Input the radius in centimeters.
+        Rainfall Coefficient: Calculate the rainfall coefficient by multiplying the volume (in mL) of one bucket from the tipping bucket gauge by 10, then divide by the rain collection area (in cm²).
 
 Configuration
 
-    Wi-Fi Configuration: The ESP32 will automatically enter configuration mode if it fails to connect to a previously known network. Use the web interface to input Wi-Fi credentials.
-    MQTT Settings, radius of the anemometer and rainfall coefficient
+    Wi-Fi Configuration: The ESP32 will automatically enter configuration mode if it fails to connect to a previously known network. Use the web interface to input Wi-Fi credentials. In this case the previous MQTT settings, radius of the anemometer, and rainfall coefficient will be displayed by default.
+   
+   If configuring the ESP32 following a reset, the process is the same as the first-time setup.
 
+   
 Usage
 Data Collection and Transmission
 
@@ -46,6 +63,4 @@ Troubleshooting
         Ensure the MQTT credentials and server address are correct.
         Verify the MQTT broker is running and accessible.
 
-License
 
-This project is licensed under the MIT License. You are free to use, modify, and distribute the code as you see fit.
