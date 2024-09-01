@@ -1,0 +1,25 @@
+1. IDE 
+  
+    Arduino IDE configured with ESP32 board  
+
+2. Libraries
+
+    Wire.h: Used for I2C communication.
+    SPIFFS.h: SPI Flash File System to store configuration files and data on the ESP32's flash memory.
+    PubSubClient.h: MQTT client library to connect to an MQTT broker and publish/subscribe to topics.
+    ArduinoJson.h: Library to handle JSON serialization and deserialization.
+    AS5600.h: Library for interfacing with the AS5600 magnetic rotary position sensor.
+    Adafruit_Sensor.h: Unified sensor driver for Adafruit sensors.
+    Adafruit_BME280.h: Library to interface with the BME280 environmental sensor for temperature, humidity, and pressure.
+    RtcDS1302.h: Library for controlling the DS1302 Real-Time Clock (RTC) module.
+    Ticker.h: Timer library to handle periodic tasks.
+    WiFiManager.h: Library to manage WiFi configuration through a web portal.
+
+3. Hardware Components
+
+    ESP32: The microcontroller used to run the code and handle sensor data and WiFi/MQTT connectivity.
+    AS5600 Magnetic Rotary Position Sensor: For detecting wind direction.
+    Adafruit BME280 Sensor: For measuring temperature, humidity, and atmospheric pressure.
+    DS1302 RTC Module: Real-Time Clock for timekeeping.
+    Hall Effect Sensors: Used to measure wind speed (anemometer) and rainfall.
+    Push Button: For triggering a reset of the system.
