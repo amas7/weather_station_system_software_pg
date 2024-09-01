@@ -25,7 +25,13 @@
     Set Anemometer Radius and Rainfall Coefficient:
         Radius of the Anemometer: Input the radius in centimeters.
         Rainfall Coefficient: Calculate the rainfall coefficient by multiplying the volume (in mL) of one bucket from the tipping bucket gauge by 10, then divide by the rain collection area (in cm²).
+Initialize Timestamp
 
+    The system requires a timestamp for the real-time clock (RTC). During configuration, you will be prompted to enter the initial timestamp in the format YYYYMMDDHHMMSS in UTC.
+
+RTC Module with Battery Backup
+
+    Note that the RTC module is powered by a battery, which ensures that the time is maintained even when the main power is off.
 Configuration
 
     Wi-Fi Configuration: The ESP32 will automatically enter configuration mode if it fails to connect to a previously known network. Use the web interface to input Wi-Fi credentials. In this case the previous MQTT settings, radius of the anemometer, and rainfall coefficient will be displayed by default.
