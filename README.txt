@@ -8,6 +8,7 @@ Features
     Precipitation Data Grouping:
         If the selected date range is less than a day, precipitation data is grouped by hour as depicted in Weather Data_hours.html
         If the selected date range is more than a day, precipitation data is grouped by day as depicted in Weather Data_days.html
+    Date and Time in UTC: All recorded data timestamps, as well as the timestamps used in the visualization, are in Coordinated Universal Time (UTC).
 
 Setup Instructions
 
